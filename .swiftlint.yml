@@ -1,6 +1,2 @@
 disabled_rules:
 - trailing_whitespace
-
-excluded:
-- CoinPrice/AppDelegate.swift
-- CoinPrice/SceneDelegate.swift

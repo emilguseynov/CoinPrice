@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3799EE78E1431D5AA401D06F /* libPods-CoinPrice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2176FB50FE4AC2CC588386E /* libPods-CoinPrice.a */; };
 		C7CA936D2976F899007112F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA936C2976F899007112F3 /* AppDelegate.swift */; };
 		C7CA936F2976F899007112F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA936E2976F899007112F3 /* SceneDelegate.swift */; };
 		C7CA93712976F899007112F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA93702976F899007112F3 /* ViewController.swift */; };
-		C7CA93742976F899007112F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA93722976F899007112F3 /* Main.storyboard */; };
 		C7CA93762976F89A007112F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA93752976F89A007112F3 /* Assets.xcassets */; };
 		C7CA93792976F89A007112F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA93772976F89A007112F3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20813EDB543DEF0887C82649 /* Pods-CoinPrice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinPrice.debug.xcconfig"; path = "Target Support Files/Pods-CoinPrice/Pods-CoinPrice.debug.xcconfig"; sourceTree = "<group>"; };
+		B69BC718CC5986548023E9C4 /* Pods-CoinPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinPrice.release.xcconfig"; path = "Target Support Files/Pods-CoinPrice/Pods-CoinPrice.release.xcconfig"; sourceTree = "<group>"; };
 		C7CA93692976F899007112F3 /* CoinPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CA936C2976F899007112F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CA936E2976F899007112F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C7CA93702976F899007112F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7CA93732976F899007112F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7CA93752976F89A007112F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7CA93782976F89A007112F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7CA937A2976F89A007112F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2176FB50FE4AC2CC588386E /* libPods-CoinPrice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinPrice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3799EE78E1431D5AA401D06F /* libPods-CoinPrice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EF0A2EC1E11EB30B3233F13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20813EDB543DEF0887C82649 /* Pods-CoinPrice.debug.xcconfig */,
+				B69BC718CC5986548023E9C4 /* Pods-CoinPrice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9FBBB9939093F558E6EC7FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2176FB50FE4AC2CC588386E /* libPods-CoinPrice.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7CA93602976F898007112F3 = {
 			isa = PBXGroup;
 			children = (
 				C7CA936B2976F899007112F3 /* CoinPrice */,
 				C7CA936A2976F899007112F3 /* Products */,
+				7EF0A2EC1E11EB30B3233F13 /* Pods */,
+				A9FBBB9939093F558E6EC7FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +81,6 @@
 				C7CA936C2976F899007112F3 /* AppDelegate.swift */,
 				C7CA936E2976F899007112F3 /* SceneDelegate.swift */,
 				C7CA93702976F899007112F3 /* ViewController.swift */,
-				C7CA93722976F899007112F3 /* Main.storyboard */,
 				C7CA93752976F89A007112F3 /* Assets.xcassets */,
 				C7CA93772976F89A007112F3 /* LaunchScreen.storyboard */,
 				C7CA937A2976F89A007112F3 /* Info.plist */,
@@ -74,6 +95,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7CA937D2976F89A007112F3 /* Build configuration list for PBXNativeTarget "CoinPrice" */;
 			buildPhases = (
+				C7B9D28F297818AF009ADD04 /* ShellScript */,
+				7D7723B2E04DF6B744779FDF /* [CP] Check Pods Manifest.lock */,
 				C7CA93652976F898007112F3 /* Sources */,
 				C7CA93662976F898007112F3 /* Frameworks */,
 				C7CA93672976F898007112F3 /* Resources */,
@@ -127,11 +150,53 @@
 			files = (
 				C7CA93792976F89A007112F3 /* LaunchScreen.storyboard in Resources */,
 				C7CA93762976F89A007112F3 /* Assets.xcassets in Resources */,
-				C7CA93742976F899007112F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D7723B2E04DF6B744779FDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinPrice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B9D28F297818AF009ADD04 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7CA93652976F898007112F3 /* Sources */ = {
@@ -147,14 +212,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C7CA93722976F899007112F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7CA93732976F899007112F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7CA93772976F89A007112F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +339,7 @@
 		};
 		C7CA937E2976F89A007112F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20813EDB543DEF0887C82649 /* Pods-CoinPrice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +350,6 @@
 				INFOPLIST_FILE = CoinPrice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +367,7 @@
 		};
 		C7CA937F2976F89A007112F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B69BC718CC5986548023E9C4 /* Pods-CoinPrice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +378,6 @@
 				INFOPLIST_FILE = CoinPrice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
