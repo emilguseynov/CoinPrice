@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3799EE78E1431D5AA401D06F /* libPods-CoinPrice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2176FB50FE4AC2CC588386E /* libPods-CoinPrice.a */; };
+		C7124F48297991C600F1BB2C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7124F47297991C500F1BB2C /* Coordinator.swift */; };
+		C7124F4A2979970D00F1BB2C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7124F492979970D00F1BB2C /* MainCoordinator.swift */; };
+		C73A3DB62979229500876DA7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A3DB52979229500876DA7 /* Service.swift */; };
+		C73A3DBA2979267800876DA7 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A3DB92979267800876DA7 /* Currency.swift */; };
+		C73A3DBD29792BE800876DA7 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A3DBC29792BE800876DA7 /* CurrencyCell.swift */; };
+		C73A3DBF29792ED300876DA7 /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A3DBE29792ED300876DA7 /* LayoutHelper.swift */; };
+		C7C3907E297AF8A0009FB199 /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C3907D297AF8A0009FB199 /* ExchangeViewController.swift */; };
 		C7CA936D2976F899007112F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA936C2976F899007112F3 /* AppDelegate.swift */; };
 		C7CA936F2976F899007112F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA936E2976F899007112F3 /* SceneDelegate.swift */; };
 		C7CA93712976F899007112F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA93702976F899007112F3 /* ViewController.swift */; };
@@ -18,6 +25,13 @@
 /* Begin PBXFileReference section */
 		20813EDB543DEF0887C82649 /* Pods-CoinPrice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinPrice.debug.xcconfig"; path = "Target Support Files/Pods-CoinPrice/Pods-CoinPrice.debug.xcconfig"; sourceTree = "<group>"; };
 		B69BC718CC5986548023E9C4 /* Pods-CoinPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinPrice.release.xcconfig"; path = "Target Support Files/Pods-CoinPrice/Pods-CoinPrice.release.xcconfig"; sourceTree = "<group>"; };
+		C7124F47297991C500F1BB2C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C7124F492979970D00F1BB2C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		C73A3DB52979229500876DA7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C73A3DB92979267800876DA7 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		C73A3DBC29792BE800876DA7 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		C73A3DBE29792ED300876DA7 /* LayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
+		C7C3907D297AF8A0009FB199 /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
 		C7CA93692976F899007112F3 /* CoinPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CA936C2976F899007112F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CA936E2976F899007112F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +71,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C73A3DB7297922A000876DA7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C73A3DB52979229500876DA7 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C73A3DB82979265600876DA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C73A3DB92979267800876DA7 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C73A3DBB29792B5600876DA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C73A3DBC29792BE800876DA7 /* CurrencyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C73A3DC029792F1A00876DA7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C73A3DBE29792ED300876DA7 /* LayoutHelper.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C7C3907F297AF960009FB199 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C7124F492979970D00F1BB2C /* MainCoordinator.swift */,
+				C7124F47297991C500F1BB2C /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		C7CA93602976F898007112F3 = {
 			isa = PBXGroup;
 			children = (
@@ -78,9 +133,15 @@
 		C7CA936B2976F899007112F3 /* CoinPrice */ = {
 			isa = PBXGroup;
 			children = (
+				C73A3DC029792F1A00876DA7 /* Support */,
+				C73A3DB82979265600876DA7 /* Model */,
+				C73A3DB7297922A000876DA7 /* Service */,
+				C73A3DBB29792B5600876DA7 /* View */,
 				C7CA936C2976F899007112F3 /* AppDelegate.swift */,
 				C7CA936E2976F899007112F3 /* SceneDelegate.swift */,
 				C7CA93702976F899007112F3 /* ViewController.swift */,
+				C7C3907D297AF8A0009FB199 /* ExchangeViewController.swift */,
+				C7C3907F297AF960009FB199 /* Coordinator */,
 				C7CA93752976F89A007112F3 /* Assets.xcassets */,
 				C7CA93772976F89A007112F3 /* LaunchScreen.storyboard */,
 				C7CA937A2976F89A007112F3 /* Info.plist */,
@@ -95,8 +156,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7CA937D2976F89A007112F3 /* Build configuration list for PBXNativeTarget "CoinPrice" */;
 			buildPhases = (
-				C7B9D28F297818AF009ADD04 /* ShellScript */,
 				7D7723B2E04DF6B744779FDF /* [CP] Check Pods Manifest.lock */,
+				C7B9D28F297818AF009ADD04 /* ShellScript */,
 				C7CA93652976F898007112F3 /* Sources */,
 				C7CA93662976F898007112F3 /* Frameworks */,
 				C7CA93672976F898007112F3 /* Resources */,
@@ -203,9 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73A3DBD29792BE800876DA7 /* CurrencyCell.swift in Sources */,
+				C7C3907E297AF8A0009FB199 /* ExchangeViewController.swift in Sources */,
 				C7CA93712976F899007112F3 /* ViewController.swift in Sources */,
+				C73A3DB62979229500876DA7 /* Service.swift in Sources */,
+				C7124F4A2979970D00F1BB2C /* MainCoordinator.swift in Sources */,
 				C7CA936D2976F899007112F3 /* AppDelegate.swift in Sources */,
 				C7CA936F2976F899007112F3 /* SceneDelegate.swift in Sources */,
+				C73A3DBA2979267800876DA7 /* Currency.swift in Sources */,
+				C73A3DBF29792ED300876DA7 /* LayoutHelper.swift in Sources */,
+				C7124F48297991C600F1BB2C /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
