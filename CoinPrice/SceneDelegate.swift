@@ -8,20 +8,27 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
-
-    // swiftlint:disable:next line_length
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        let viewController = ViewController()
         let navController = UINavigationController(rootViewController: viewController)
-        
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        window?.windowScene = windowScene
-        window?.rootViewController = navController
-        window?.makeKeyAndVisible()
-    }
-
+    
+    func scene(
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions) {
+            
+            guard let windowScene = (scene as? UIWindowScene) else { return }
+            
+            let navController = UINavigationController()
+            
+            let coordinator = MainCoordinator()
+            coordinator.navController = navController
+            
+            window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+            window?.windowScene = windowScene
+            window?.rootViewController = navController
+            window?.makeKeyAndVisible()
+            
+            coordinator.start()
+        }
 }
