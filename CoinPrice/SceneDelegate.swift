@@ -10,7 +10,6 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-        let navController = UINavigationController(rootViewController: viewController)
     
     func scene(
         _ scene: UIScene,
